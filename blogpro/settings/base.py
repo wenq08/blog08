@@ -49,10 +49,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'blogpro.urls'
 
+# 由于base文件位置改变，所有关于路径前要加'../'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # 添加模板路径
+        'DIRS': [os.path.join(BASE_DIR, '../template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -112,6 +114,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+# 添加静态文件路径
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, '../static'),
+]
 
 SITE_DESCRIPTION = 'hello'
 

@@ -587,11 +587,11 @@ i.glyphicon.glyphicon-comment {
   font-size: 14px;
   color: #000;
   background:none;
-  width:82%;
+  width:81%;
 }
 .search-1 form input[type="submit"] {
     background: url(../images/key2.png) no-repeat 13px 9px;
-    width: 40px;
+    width: 38px;
     height: 32px;
     border: none;
     margin: 0 0 0 0px;

@@ -2,6 +2,11 @@ from django.contrib import admin
 from .models import Article, Tag, KeyWord, BigCategory, Category
 # Register your models here.
 
+# 自定义博客后台
+admin.site.site_header = '网站管理'
+admin.site.site_title = '博客后台管理'
+
+
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
    
@@ -27,4 +32,20 @@ class ArticleAdmin(admin.ModelAdmin):
 
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
-    list_display = ('name', 'create_date')
+    list_display = ('id', 'name', 'create_date')
+    list_filter = ('name',)
+    search_fields = ('name',)
+
+
+@admin.register(BigCategory)
+class BigCategoryAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'keyword', 'create_date')
+    list_filter = ('name',)
+    search_fields = ('name',)
+
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'keyword', 'create_date', 'slug')
+    list_filter = ('name',)
+    search_fields = ('name',)

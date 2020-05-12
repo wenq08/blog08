@@ -2,7 +2,8 @@
 *.swp
 *.sqlite
 *.sql
-env37
+env3
+settings.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
