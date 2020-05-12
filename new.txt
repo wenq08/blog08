@@ -1,0 +1,4 @@
+pygments用法：pygmentize -S monokai -f html -a .codehilite > monokai.css
+删除用户
+>>> from django.contrib.auth.models import User
+>>> User.objects.all().delete()
