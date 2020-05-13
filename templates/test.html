@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>下拉菜单实例|菜鸟教程(runoob.com)</title>
+<meta charset="utf-8">
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+/* 下拉按钮样式 */
+li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover, .dropbtn {
+    background-color: #111;
+}
+
+/* 定位下拉菜单方向 */
+.dropdown {
+   
+    display: inline-block;
+}
+/* 下拉内容 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content li {
+    display: block;
+    float: none;
+}
+/* 下拉的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* 移动到下拉的链接显示颜色 */
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+/* 鼠标移动上时显示下拉 */
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+
+<ul class="new">
+  <li><a class="active" href="#home">主页</a></li>
+  <li><a href="#news">新闻</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">下拉菜单</a>
+    <ul class="dropdown-content">
+      <li class=""><a href="#">链接 1</a></li>
+      <li><a href="#">链接 1</a></li>
+      <li><a href="#">链接 1</a></li>
+    </ul>
+</li>
+</ul>
+
+<h3>导航栏上的下拉菜单</h3>
+<p>鼠标移动到 "下拉菜单" 链接先显示下拉菜单。</p>
+
+</body>
+</html>
