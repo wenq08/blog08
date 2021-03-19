@@ -4,7 +4,7 @@ pymysql==0.9.3
 markdown==3.2.1
 pygments==2.6.1
 django-password-reset==2.0
-Pillow==7.1.0
+Pillow==8.1.1
 django-ckeditor==5.9.0
 django-taggit==1.2.0
 django-mptt==0.11.0
