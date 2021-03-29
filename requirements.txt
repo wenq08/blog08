@@ -2,7 +2,7 @@
 Django~=2.2
 pymysql==0.9.3
 markdown==3.2.1
-pygments==2.6.1
+pygments==2.7.4
 django-password-reset==2.0
 Pillow==7.1.0
 django-ckeditor==5.9.0
